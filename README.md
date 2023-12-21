@@ -66,10 +66,10 @@ docker compose exec app bash -ce "
   "
 ```
 
-Now you're all set, you can visit the [localhost with port 80](http://localhost), you should
+Now you're all set, you can visit the [localhost with port 8080](http://localhost:8080), you should
 see the Symfony default application web page.
 
-Also, a GET endpoint [/api/hello-world](http://localhost/api/hello-world) was added to configure and show the functional
+Also, a GET endpoint [/api/hello-world](http://localhost:8080/api/hello-world) was added to configure and show the functional
 test environment. It will always return static data:
 ```json
 {
