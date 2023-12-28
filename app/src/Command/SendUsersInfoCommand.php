@@ -27,7 +27,6 @@ final class SendUsersInfoCommand extends Command
         $users = $this->userRepository->getAll();
 
         foreach ($users as $user) {
-
             $message = new UserInfo(
                 $user->getId(),
                 $user->getFirstName(),

@@ -9,7 +9,5 @@ use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 #[AsMessageHandler]
 final readonly class UserInfoHandler
 {
-    public function __invoke(UserInfo $userInfo): void
-    {
-    }
+    public function __invoke(UserInfo $userInfo): void {}
 }
