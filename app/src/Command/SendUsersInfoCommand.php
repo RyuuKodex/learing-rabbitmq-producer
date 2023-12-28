@@ -28,7 +28,12 @@ final class SendUsersInfoCommand extends Command
 
         foreach ($users as $user) {
 
-            $message = new UserInfo($user);
+            $message = new UserInfo(
+                $user->getId(),
+                $user->getFirstName(),
+                $user->getSurname(),
+                $user->getEmail()
+            );
 
             $this->messageBus->dispatch($message);
         }
